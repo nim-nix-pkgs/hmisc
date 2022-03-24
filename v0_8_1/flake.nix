@@ -13,6 +13,14 @@
   inputs.src-hmisc-v0_8_1.repo  = "hmisc";
   inputs.src-hmisc-v0_8_1.type  = "github";
   
+  inputs."sorta".owner = "nim-nix-pkgs";
+  inputs."sorta".ref   = "master";
+  inputs."sorta".repo  = "sorta";
+  inputs."sorta".dir   = "";
+  inputs."sorta".type  = "github";
+  inputs."sorta".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."sorta".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;
