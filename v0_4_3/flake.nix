@@ -11,6 +11,7 @@
   inputs.src-hmisc-v0_4_3.ref   = "refs/tags/v0.4.3";
   inputs.src-hmisc-v0_4_3.owner = "haxscramper";
   inputs.src-hmisc-v0_4_3.repo  = "hmisc";
+  inputs.src-hmisc-v0_4_3.dir   = "";
   inputs.src-hmisc-v0_4_3.type  = "github";
   
   inputs."with".owner = "nim-nix-pkgs";

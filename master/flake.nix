@@ -11,6 +11,7 @@
   inputs.src-hmisc-master.ref   = "refs/heads/master";
   inputs.src-hmisc-master.owner = "haxscramper";
   inputs.src-hmisc-master.repo  = "hmisc";
+  inputs.src-hmisc-master.dir   = "";
   inputs.src-hmisc-master.type  = "github";
   
   inputs."benchy".owner = "nim-nix-pkgs";
