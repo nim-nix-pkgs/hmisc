@@ -11,8 +11,15 @@
   inputs.src-hmisc-v0_13_0.ref   = "refs/tags/v0.13.0";
   inputs.src-hmisc-v0_13_0.owner = "haxscramper";
   inputs.src-hmisc-v0_13_0.repo  = "hmisc";
-  inputs.src-hmisc-v0_13_0.dir   = "";
   inputs.src-hmisc-v0_13_0.type  = "github";
+  
+  inputs."fusion".owner = "nim-nix-pkgs";
+  inputs."fusion".ref   = "master";
+  inputs."fusion".repo  = "fusion";
+  inputs."fusion".dir   = "v1_1";
+  inputs."fusion".type  = "github";
+  inputs."fusion".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."fusion".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."benchy".owner = "nim-nix-pkgs";
   inputs."benchy".ref   = "master";
